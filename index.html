@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="/scripts/game.js" defer></script>
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Pig Game</title>
+  </head>
+  <body>
+    <main>
+      <h1>Pig Game</h1>
+      <form id="nameForm" class="container show">
+        <label>Skriv ditt namn</label>
+        <input type="text" id="nameInput" />
+        <button>Starta spelet</button>
+      </form>
+      <h2>Ditt namn är:</h2>
+      <p id="playerName">Ingenting än så länge...</p>
+    </main>
+
+    <div id="winContainer" class="container">
+      <h2 id="winMessage">You won!</h2>
+      <button id="playAgainButton">Play again</button>
+    </div>
+
+    <div id="game" class="container">
+      <h2>Antal spelade omgångar:</h2>
+      <p id="turnsPlayed">0</p>
+      <h2>Din totala poäng är:</h2>
+      <p id="totalScore">0</p>
+      <h2>Omgångens poäng är:</h2>
+      <p id="roundScore">0</p>
+      <h2>Tärningens nummer:</h2>
+      <p id="diceNumber">...</p>
+      <button id="diceButton">Kasta tärningen</button>
+      <button id="freezeButton">Frys poängen</button>
+    </div>
+  </body>
+</html>
